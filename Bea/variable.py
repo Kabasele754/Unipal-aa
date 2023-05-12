@@ -1,3 +1,4 @@
-b = 5
+nb1 = 5
+nb2 = 4
 
-print(b)
+print(nb1+nb2)
