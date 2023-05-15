@@ -32,3 +32,26 @@ La façon la plus simple d’installer non seulement Panda, mais aussi Python et
 Après avoir exécuté le programme d’installation, vous aurez accès à Pandas et au reste de l’écosystème SciPy sans avoir besoin d’installer un autre logiciel, ce qui rend l’outil pratique. Les instructions d’installation pour Anaconda sont disponibles ici.
 
 Nous utiliserons dans la suite de cet article l’outil Jupyter Notebook pour écrire nos codes. Il est intégré directement dans Anaconda.
+
+Après l’installation de Pandas et pour commencer à l’utiliser, vous devez l’importer dans votre script comme suit :
+
+```import pandas as pd ```
+
+
+Ici, pd est considéré comme un alias de Pandas. Cependant, il n’est pas nécessaire d’importer la bibliothèque en utilisant un alias, cela permet simplement d’écrire moins de code à chaque fois qu’une méthode ou une propriété est appelée.
+
+Alors démarrons sans plus tarder à étudier les structures de données proposées par Pandas pour la manipulation et l’analyse de données.
+
+## Les principales structures de données de Python Panda
+
+Pandas fournit généralement deux structures de données pour manipuler les données, ce sont : les Series et les Dataframe.
+
+## Les series
+
+Une série est un tableau étiqueté unidimensionnel pouvant contenir tout type de données (entiers, chaînes de caractères, nombres à virgule flottante, objets Python, etc.). Les étiquettes des axes représentent l’index de la série. Pour être plus simple, une série n’est rien d’autre qu’une colonne dans une feuille Excel. La méthode de base pour créer une série est la suivante :
+
+``` ser = pd.Series(data,  index=index) ```
+
+data peut être un dictionnaire Python, un ndarray (tableau multi-dimensionnel de NumPy) ou même une valeur scalaire.
+
+L’index passé en argument est une liste d’étiquettes correspondant à chaque ligne de la série.
