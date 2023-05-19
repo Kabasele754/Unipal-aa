@@ -1,0 +1,8 @@
+import cv2 as cv
+
+img=cv.imread ("Ressource/1.jpg")
+cv.imshow("1",img)
+#changer couleur
+gray=cv.cvtColor(img,cv.COLOR_BGR2GRAY)
+cv.imshow("1",gray)
+cv.waitKey(0)
