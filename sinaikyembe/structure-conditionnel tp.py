@@ -5,12 +5,19 @@
 #est « passable » si la moyenne est entre 10 inclus et 12 exclus, « assez bien » entre 12 inclus et 14 exclus et «
 #bien » au-delà de 14 
 
-note1=input("Entre note 1")
-note2=input("entre note 2")
-note=input("Entre note3")
-if note > 10:
-    print("tu as maxé")
-else: 
-    print("tu na pas maxé")
-    print(str(note=int))
-    print(note)
+cote_etud=(14,16,13,17,12)
+maxm=max(cote_etud)
+print(f"la cote maximale est: {maxm}")
+mini=min(cote_etud)
+print(f"la cote minimale est: {mini}")
+som=sum(cote_etud)
+
+sommEl= len(cote_etud)
+moy=som/sommEl
+print(f"la moyenne est de : {moy}")
+if moy == 10 and moy < 12:
+    print(f"la moyenne est de :{moy} et à pour mension passable!")
+elif moy >= 12 and moy < 14:
+    print(f"la moyenne est de :{moy} et à pour mension assez bien!")
+elif moy >= 14:
+     print(f"la moyenne est de :{moy} et à pour mension bien!")
